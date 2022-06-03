@@ -4,11 +4,11 @@ pub use derive_more;
 macro_rules! derive_wrapper {
     ($i:item) => {
         #[derive(
-            ::derive_more::Deref,
-            ::derive_more::DerefMut,
-            ::derive_more::AsRef,
-            ::derive_more::From,
-            ::derive_more::Into,
+            ::chessbik_commons::derive_more::Deref,
+            ::chessbik_commons::derive_more::DerefMut,
+            ::chessbik_commons::derive_more::AsRef,
+            ::chessbik_commons::derive_more::From,
+            ::chessbik_commons::derive_more::Into,
         )]
         $i
     };
