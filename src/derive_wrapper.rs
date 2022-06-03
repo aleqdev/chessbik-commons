@@ -1,3 +1,5 @@
+pub use derive_more;
+
 #[macro_export]
 macro_rules! derive_wrapper {
     ($i:item) => {
