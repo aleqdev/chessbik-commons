@@ -8,6 +8,4 @@ impl Lobby {
         assert!(s.len() == 7, "lobby string must be 7 characters");
         Self(s)
     }
-
-    pub fn new_random() -> Self {}
 }
