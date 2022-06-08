@@ -1,4 +1,4 @@
-crate::derive_wrapper!(
+chessbik_derive_wrapper::derive_wrapper!(
     pub struct Lobby(String);
 );
 

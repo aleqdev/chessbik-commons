@@ -3,7 +3,7 @@ use chessbik_board::{Side, Piece};
 pub mod impls;
 pub use impls::*;
 
-chessbik_commons::derive_wrapper!(
+chessbik_derive_wrapper::derive_wrapper!(
     #[derive(Clone, Copy)]
     pub struct Cell {
         #[deref]
