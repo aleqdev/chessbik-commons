@@ -1,4 +1,4 @@
-use chessbik_board::{Side, Piece};
+use chessbik_board::{Piece, Side};
 
 pub mod impls;
 pub use impls::*;

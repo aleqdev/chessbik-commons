@@ -10,7 +10,7 @@ impl GetAvailableMoves<Cell> for Cell {
     ) -> Vec<chessbik_board::PieceMove> {
         match self.piece {
             Some(piece) => piece.get_available_moves(pos, board),
-            None => vec!()
+            None => vec![],
         }
     }
 }

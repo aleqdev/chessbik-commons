@@ -1,4 +1,7 @@
 chessbik_derive_wrapper::derive_wrapper!(
+    #[derive(
+        Debug, Clone, PartialEq, Eq, PartialOrd, Ord, serde::Serialize, serde::Deserialize,
+    )]
     pub struct Lobby(String);
 );
 
