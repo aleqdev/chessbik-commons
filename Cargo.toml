@@ -1,0 +1,8 @@
+[package]
+name = "chessbik-commons"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chessbik-derive-wrapper = { git = "https://github.com/necromfox/chessbik-derive-wrapper" }
+chessbik-board = { git = "https://github.com/necromfox/chessbik-board" }
