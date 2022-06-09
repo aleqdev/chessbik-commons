@@ -12,6 +12,12 @@ pub use get_piece::*;
 pub mod get_available_moves;
 pub use get_available_moves::*;
 
+pub mod serialize;
+pub use serialize::*;
+
+pub mod deserialize;
+pub use deserialize::*;
+
 impl Cell {
     pub fn some(piece: impl Into<Piece>, side: Side) -> Self {
         Self {

@@ -8,7 +8,7 @@ chessbik_derive_wrapper::derive_wrapper!(
 impl Lobby {
     pub fn new(s: impl Into<String>) -> Self {
         let s = s.into();
-        assert!(s.len() == 7, "lobby string must be 7 characters");
+        assert!(s.len() == 14, "lobby string must be 14 characters");
         Self(s)
     }
 }

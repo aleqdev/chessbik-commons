@@ -7,3 +7,4 @@ edition = "2021"
 chessbik-derive-wrapper = { git = "https://github.com/necromfox/chessbik-derive-wrapper" }
 chessbik-board = { git = "https://github.com/necromfox/chessbik-board" }
 serde = { version = "*", features = ["serde_derive"] }
+serde_json = "*"
