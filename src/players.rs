@@ -1,5 +1,6 @@
 use crate::{Player, PlayerColor};
 
+#[derive(serde::Serialize, serde::Deserialize, Default, Debug, Clone, PartialEq, Eq, PartialOrd, Ord)]
 pub struct Players {
     pub white: Player,
     pub black: Player
