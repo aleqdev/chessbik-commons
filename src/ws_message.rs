@@ -12,8 +12,6 @@ pub enum WsMessage {
     RequestBoardCallback(Board<Cell>),
     RequestOpponentAddition(Lobby, PlayerColor, PlayerToken),
     RequestEngineAddition(Lobby, PlayerColor, PlayerToken),
-    RequestPlayerOwning(Lobby, PlayerColor, PlayerToken),
-    RequestPlayerOwningCallback(PlayerColor, bool),
     RequestPlayers(Lobby, PlayerToken),
     RequestPlayesrCallback(PlayersRecord),
     RequestPlayerRemoval(Lobby, PlayerColor, PlayerToken),
