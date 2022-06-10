@@ -1,6 +1,6 @@
 use chessbik_board::Board;
 
-use crate::{Lobby, Cell, PlayerColor, PlayerToken};
+use crate::{Lobby, Cell, PlayerColor, PlayerToken, PlayersRecord};
 
 #[derive(serde::Serialize, serde::Deserialize, Debug, Clone, PartialEq, Eq, PartialOrd, Ord)]
 pub enum WsMessage {
@@ -14,6 +14,11 @@ pub enum WsMessage {
     RequestEngineAddition(Lobby, PlayerColor, PlayerToken),
     RequestPlayerOwning(Lobby, PlayerColor, PlayerToken),
     RequestPlayerOwningCallback(PlayerColor, bool),
+    RequestPlayers(Lobby, PlayerToken),
+    RequestPlayesrCallback(PlayersRecord),
     RequestPlayerRemoval(Lobby, PlayerColor, PlayerToken),
-    JoinGame(Lobby)
+    RequestPlayerNameUpdate(Lobby, PlayerColor, PlayerToken),
+    JoinGame(Lobby),
+    ConsiderRequestingBoard,
+    ConsiderRequestingPlayers
 }

@@ -21,3 +21,15 @@ pub use player_token::*;
 
 pub mod player_color;
 pub use player_color::*;
+
+pub mod player_record;
+pub use player_record::*;
+
+pub mod players_record;
+pub use players_record::*;
+
+pub mod is_owning;
+pub use is_owning::*;
+
+pub mod opponent_name;
+pub use opponent_name::*;
