@@ -6,7 +6,7 @@ use crate::{Lobby, Cell, PlayerColor, PlayerToken};
 pub enum WsMessage {
     CreateGame,
     CreateGameCallback(Lobby),
-    RequestPlayerToken(Lobby),
+    RequestPlayerToken,
     RequestPlayerTokenCallback(PlayerToken),
     RequestBoard(Lobby),
     RequestBoardCallback(Board<Cell>),
@@ -14,5 +14,6 @@ pub enum WsMessage {
     RequestEngineAddition(Lobby, PlayerColor, PlayerToken),
     RequestPlayerOwning(Lobby, PlayerColor, PlayerToken),
     RequestPlayerOwningCallback(bool),
-    RequestPlayerRemoval(Lobby, PlayerColor, PlayerToken)
+    RequestPlayerRemoval(Lobby, PlayerColor, PlayerToken),
+    JoinGame(Lobby)
 }
