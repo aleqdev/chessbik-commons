@@ -13,7 +13,7 @@ pub enum WsMessage {
     RequestOpponentAddition(Lobby, PlayerColor, PlayerToken, OpponentName),
     RequestEngineAddition(Lobby, PlayerColor, PlayerToken),
     RequestPlayers(Lobby, PlayerToken),
-    RequestPlayersrCallback(PlayersRecord),
+    RequestPlayersCallback(PlayersRecord),
     RequestPlayerRemoval(Lobby, PlayerColor, PlayerToken),
     RequestPlayerNameUpdate(Lobby, PlayerColor, PlayerToken, OpponentName),
     RequestGameSubscription(Lobby, PlayerToken),
