@@ -1,10 +1,10 @@
-use crate::PlayerToken;
+use crate::{PlayerToken, OpponentName};
 
 #[derive(serde::Serialize, serde::Deserialize, Debug, Clone, PartialEq, Eq, PartialOrd, Ord)]
 pub enum Player {
     None,
     Engine(PlayerToken),
-    Opponent(PlayerToken),
+    Opponent(PlayerToken, OpponentName),
 }
 
 impl Default for Player {
