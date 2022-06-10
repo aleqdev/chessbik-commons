@@ -13,7 +13,7 @@ pub enum WsMessage {
     RequestOpponentAddition(Lobby, PlayerColor, PlayerToken),
     RequestEngineAddition(Lobby, PlayerColor, PlayerToken),
     RequestPlayerOwning(Lobby, PlayerColor, PlayerToken),
-    RequestPlayerOwningCallback(bool),
+    RequestPlayerOwningCallback(PlayerColor, bool),
     RequestPlayerRemoval(Lobby, PlayerColor, PlayerToken),
     JoinGame(Lobby)
 }
