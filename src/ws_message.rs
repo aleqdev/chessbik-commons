@@ -5,7 +5,6 @@ use crate::{Lobby, Cell, PlayerColor, PlayerToken, PlayersRecord, OpponentName};
 #[derive(serde::Serialize, serde::Deserialize, Debug, Clone, PartialEq, Eq, PartialOrd, Ord)]
 pub enum WsMessage {
     CreateGame,
-    CreateGameCallback(Lobby),
     RequestPlayerToken,
     RequestPlayerTokenCallback(PlayerToken),
     RequestBoard(Lobby),
@@ -18,5 +17,6 @@ pub enum WsMessage {
     RequestPlayerNameUpdate(Lobby, PlayerColor, PlayerToken, OpponentName),
     RequestGameSubscription(Lobby, PlayerToken),
     ConsiderRequestingBoard,
-    ConsiderRequestingPlayers
+    ConsiderRequestingPlayers,
+    ConsiderSubscription(Lobby)
 }
