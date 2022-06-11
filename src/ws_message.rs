@@ -19,5 +19,6 @@ pub enum WsMessage {
     RequestGameUnsubscription(Lobby, PlayerToken),
     ConsiderRequestingBoard,
     ConsiderRequestingPlayers,
-    ConsiderSubscription(Lobby)
+    ConsiderSubscription(Lobby),
+    Hb
 }
