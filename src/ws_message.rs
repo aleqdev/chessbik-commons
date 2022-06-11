@@ -16,6 +16,7 @@ pub enum WsMessage {
     RequestPlayerRemoval(Lobby, PlayerColor, PlayerToken),
     RequestPlayerNameUpdate(Lobby, PlayerColor, PlayerToken, OpponentName),
     RequestGameSubscription(Lobby, PlayerToken),
+    RequestGameUnsubscription(Lobby, PlayerToken),
     ConsiderRequestingBoard,
     ConsiderRequestingPlayers,
     ConsiderSubscription(Lobby)
