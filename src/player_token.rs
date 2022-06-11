@@ -1,5 +1,5 @@
 chessbik_derive_wrapper::derive_wrapper!(
-    #[derive(serde::Serialize, serde::Deserialize, Debug, Clone, PartialEq, Eq, PartialOrd, Ord)]
+    #[derive(serde::Serialize, serde::Deserialize, Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
     pub struct PlayerToken(String);
 );
 
