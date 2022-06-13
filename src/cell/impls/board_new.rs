@@ -1,4 +1,4 @@
-use chessbik_board::{Board, BoardNew};
+use chessbik_board::{Board, BoardNew, BoardStatus};
 
 use super::*;
 
@@ -61,6 +61,7 @@ impl BoardNew for Cell {
                 Cell::black_pawn(Side::BOTTOM),
                 Cell::black_pawn(Side::BOTTOM),
             ],
+            status: BoardStatus::WhitesMove
         }
     }
 }
