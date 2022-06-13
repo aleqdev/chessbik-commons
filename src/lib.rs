@@ -27,3 +27,6 @@ pub use is_owning::*;
 
 pub mod opponent_name;
 pub use opponent_name::*;
+
+pub mod piece_move_pair;
+pub use piece_move_pair::*;

@@ -1,6 +1,6 @@
 use chessbik_board::Board;
 
-use crate::{Lobby, Cell, PlayerColor, PlayerToken, PlayersRecord, OpponentName};
+use crate::{Lobby, Cell, PlayerColor, PlayerToken, PlayersRecord, OpponentName, PieceMovePair};
 
 #[derive(serde::Serialize, serde::Deserialize, Debug, Clone, PartialEq, Eq, PartialOrd, Ord)]
 pub enum WsMessage {
@@ -20,5 +20,6 @@ pub enum WsMessage {
     ConsiderRequestingBoard,
     ConsiderRequestingPlayers,
     ConsiderSubscription(Lobby),
+    RequestMakeMove(Lobby, PlayerColor, PlayerToken, PieceMovePair),
     Hb
 }
