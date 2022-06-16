@@ -18,6 +18,9 @@ pub use serialize::*;
 pub mod deserialize;
 pub use deserialize::*;
 
+pub mod board_transform;
+pub use board_transform::*;
+
 impl Cell {
     pub fn some(piece: impl Into<Piece>, side: Side) -> Self {
         Self {
