@@ -20,4 +20,11 @@ impl PlayerColor {
             PlayerColor::BLACK => PlayerColor::WHITE ,
         }
     }
+
+    pub fn piece(&self) -> PieceColor {
+        match self {
+            PlayerColor::WHITE => PieceColor::WHITE,
+            PlayerColor::BLACK => PieceColor::BLACK ,
+        }
+    }
 }
