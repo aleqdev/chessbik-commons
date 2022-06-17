@@ -13,4 +13,11 @@ impl PlayerColor {
             PlayerColor::BLACK => c == PieceColor::BLACK,
         }
     }
+
+    pub fn opposite(&self) -> Self {
+        match self {
+            PlayerColor::WHITE => PlayerColor::BLACK,
+            PlayerColor::BLACK => PlayerColor::WHITE ,
+        }
+    }
 }
